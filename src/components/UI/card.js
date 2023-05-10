@@ -1,5 +1,5 @@
 import React from 'react';
-import './card.css'
+import './UICSS/card.css'
 
 const Card= (props)=>{
     const classes= `card ${props.className}`;

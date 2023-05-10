@@ -1,13 +1,12 @@
 import React from "react";
-import "./expenseDate.css";
+import "./css/expenseDate.css";
 import Card from "./UI/card";
 
-const date = new Date();
-const day = date.getDay();
-const month = date.toLocaleString("default", { month: "long" });
-const year = date.getFullYear();
-
-const DateFunction = () => {
+const DateFunction = (props) => {
+  const dateGet = props.date;
+  const day = dateGet.getDate();
+  const month = dateGet.toLocaleString("default", { month: "long" });
+  const year = dateGet.getFullYear();
   return (
     <Card className="expense-date">
       <div className="expense-date__month">{month}</div>
