@@ -2,15 +2,14 @@ import React from "react";
 import Expenseform from "./form";
 import './newExpenseCSS/addExpense.css';
 
-const Addexpense = () => {
+const Addexpense = (props) => {
 
-  const getDatafromFormHandler=(data)=>{   // data is stateCollected that u got from form.js when pass as argument.
-    // console.log(data);
+  const getDatafromFormHandler=(data)=>{   
     const dataInserted= {
       ...data,
-      id: Math.random().toString()   //some random no.
+      id: Math.random().toString()  
     }
-    // console.log(dataInserted);
+    props.onAddExpense(dataInserted);
   }
 
 
