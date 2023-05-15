@@ -3,7 +3,7 @@ import './newExpenseCSS/form.css'
 
 const Expenseform = (props) => {
 
-  const [inputObject, inputFunction]=useState({    // // we use useState to store the data bcz we use useState in submit to change state either to just store data get from event we can only use variables.
+  const [inputObject, inputFunction]=useState({    
     enteredTitle:"",
     enteredAmount:"",
     enteredDate:""
@@ -32,7 +32,7 @@ const Expenseform = (props) => {
 
     const stateCollected= {
       title: inputObject.enteredTitle,   
-      price: inputObject.enteredAmount,
+      price: +inputObject.enteredAmount,    //If ur string is in already a number but just "" then use + to make it number
       date: inputObject.enteredDate
     }
     props.onGetDataFromForm(stateCollected); 
