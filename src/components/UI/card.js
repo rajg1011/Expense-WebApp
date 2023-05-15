@@ -1,11 +1,9 @@
-import React from 'react';
-import './UICSS/card.css'
+import React from "react";
+import "./UICSS/card.css";
 
-const Card= (props)=>{
-    const classes= `card ${props.className}`;
-    return(
-        <div className={classes}>{props.children}</div>
-    );
-}
+const Card = (props) => {
+  const classes = `card ${props.className}`;
+  return <div className={classes}>{props.children}</div>;
+};
 
 export default Card;

@@ -4,13 +4,12 @@ import DateFunction from "./expenseDate";
 import Card from "./UI/card";
 
 const ExpenseItem = (props) => {
+  const [title, setTitleFunction] = useState(props.title);
 
- const [title , setTitleFunction]= useState(props.title);
-
-const clickHandler=(event)=>{
-  console.log(event);
-  setTitleFunction("updated");
-}
+  const clickHandler = (event) => {
+    console.log(event);
+    setTitleFunction("updated");
+  };
 
   return (
     <Card className="expense-item">
