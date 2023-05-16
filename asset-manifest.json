@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Expense-WebApp/static/css/main.d0bfbb3b.css",
+    "main.js": "/Expense-WebApp/static/js/main.a8139a8e.js",
+    "static/js/787.f6b89c4d.chunk.js": "/Expense-WebApp/static/js/787.f6b89c4d.chunk.js",
+    "index.html": "/Expense-WebApp/index.html",
+    "main.d0bfbb3b.css.map": "/Expense-WebApp/static/css/main.d0bfbb3b.css.map",
+    "main.a8139a8e.js.map": "/Expense-WebApp/static/js/main.a8139a8e.js.map",
+    "787.f6b89c4d.chunk.js.map": "/Expense-WebApp/static/js/787.f6b89c4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0bfbb3b.css",
+    "static/js/main.a8139a8e.js"
+  ]
+}
